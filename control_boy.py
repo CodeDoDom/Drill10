@@ -52,7 +52,6 @@ def render_world():
 open_canvas()
 create_world()
 
-
 # game loop
 while running:
     handle_events()
