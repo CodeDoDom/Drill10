@@ -17,5 +17,7 @@ def render():
     for o in world:
         o.draw()
 
-
+# 객체 삭제
+def remove_object(o):
+    world.remove(o)
 
