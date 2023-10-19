@@ -172,7 +172,7 @@ class Boy:
     def fire_ball(self):
         ball = Ball(self.x, self.y, self.face_dir * 10)
         # 생성한 볼을 월드에 넣어줘야 한다.
-        game_world.add_object(ball)
+        game_world.add_object(ball, 1)
         if self.face_dir == 1:
             print('FIRE BALL to Right')
         elif self.face_dir == -1:

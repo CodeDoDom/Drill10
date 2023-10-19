@@ -29,11 +29,11 @@ def create_world():
 
     running = True
 
-    grass = Grass()
-    game_world.add_object(grass)
-
     boy = Boy()
-    game_world.add_object(boy)
+    game_world.add_object(boy, 1)
+
+    grass = Grass()
+    game_world.add_object(grass, 0)
 
 
 def update_world():
@@ -48,6 +48,8 @@ def render_world():
 
 open_canvas()
 create_world()
+
+
 # game loop
 while running:
     handle_events()
